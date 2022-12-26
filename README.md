@@ -23,5 +23,7 @@ Simply run:
   pip install -r requirements.txt
 ```
 ## Data Visualization
+
 Model with 75% Accuracy Score
+
 ![](graphviz.png)
