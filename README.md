@@ -15,5 +15,5 @@ Dependencies
 ```
 ## Data Visualization
 
-![](graphviz.svg)
+![](graphviz.jpg)
 
