@@ -6,14 +6,21 @@ A simple machine learning algorithm in python, trained to predict recommended mu
 ## Deployment
 
 To deploy this project import "mlearn.ipynb" to jupyter notebook
+For native deployment:
+```
+  python3 mlearn.py
+```
 
-Dependencies
+## Dependencies
 ```
   pandas
-  sklearn
+  scikit-learn
   joblib
 ```
+Simply run:
+```
+  pip install -r requirements.txt
+```
 ## Data Visualization
-
-![](graphviz.jpg)
-
+Model with 75% Accuracy Score
+![](graphviz.png)
