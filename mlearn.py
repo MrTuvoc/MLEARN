@@ -21,6 +21,7 @@ def predict(age,gender):
 	# output visualization
 	tree.export_graphviz(model,out_file='music-predict.dot',feature_names=['age','gender'],class_names=sorted(y.unique()),label='all',rounded=True,filled=True)
 	pred = model.predict(X_test)
+	score = accuracy_score(y_test,pred) # AI accuracy score
 	return model.predict([[str(age),str(gender)]])
 
 # input/output function
