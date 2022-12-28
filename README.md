@@ -1,7 +1,7 @@
 
 # MLEARN
 
-A simple machine learning algorithm in python, trained to predict recommended music genre based on age and gender.
+A simple machine learning algorithm in python, trained to predict the most successful movie genre of a given year based on datalist of netflix movies.
 
 ## Deployment
 
@@ -23,7 +23,5 @@ Simply run:
   pip install -r requirements.txt
 ```
 ## Data Visualization
-
-Model with 75% Accuracy Score
 
 ![](graphviz.png)
