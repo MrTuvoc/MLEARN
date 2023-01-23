@@ -1,4 +1,4 @@
-#import
+# Import
 import pandas as pd
 import joblib
 from sklearn.tree import DecisionTreeClassifier
@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn import tree
 
-# prediction / training function
+# Prediction / Training function
 def predict(year):
 	movie_data = pd.read_csv('data/best_movies_netflix.csv')
 	X = movie_data.drop(columns=['title','number_of_votes','duration','main_genre','main_production'])
@@ -24,10 +24,7 @@ def predict(year):
 	score = accuracy_score(y_test, pred) # AI accuracy score
 	return model.predict([[str(year),movie_data['score'].max()]])
 
-# input/output function
-def take():
+# I/O function
+if __name__=="__main__":
 	year = input("Year?")
 	print("Well if I'm right",''.join(predict(year)).title(),"is the most successful genre of",year)
-
-if __name__=="__main__":
-	take()
